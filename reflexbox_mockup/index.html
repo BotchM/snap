@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>#teamdashboard</title>
+  <meta name="description" content="SFU Student Dashboard">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name=viewport content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="./example.css" media="screen" title="no title" charset="utf-8">
+  <style media="screen">
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+    }
+
+    html {
+      height: 100%;
+      color: #404040;
+      font: 400 1em/1.4 'Open Sans',sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+
+    body {
+      margin-top: 0;
+    }
+
+    .widget {
+      position: relative;
+      box-sizing: border-box;
+      min-height: 1rem;
+      margin-bottom: 0;
+      background: #007FFF;
+      border: 1px solid #FFF;
+      border-radius: 2px;
+      overflow: hidden;
+      text-align: center;
+      color: #fff;
+    }
+
+    .primary {
+      order: 1;
+    }
+
+    .secondary {
+      order: 2;
+    }
+
+    @media only screen and (min-width: 48em) {
+      .primary {
+        order: 2;
+      }
+
+      .secondary {
+        order: 1;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>hello, it's me</h1>
+  <div id="app"></div>
+  <script src="example.js"></script>
+</body>
+</html>
