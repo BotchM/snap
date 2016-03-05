@@ -5,7 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   context: __dirname,                                   // input path
-  devtool: 'inline-source-map',
+  devtool: 'cheap-module-source-map',
   entry: [                                              // webpack will start consuming from these file(s)
     'webpack-hot-middleware/client',
     './index.js'
@@ -43,7 +43,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development')
+      'process.env.NODE_ENV': JSON.stringify('production')
     })
   ]
 };
